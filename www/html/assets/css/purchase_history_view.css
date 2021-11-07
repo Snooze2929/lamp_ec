@@ -1,0 +1,65 @@
+body {
+    color:white;
+    background-color:black;
+}
+
+.center{
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+    text-align:center;
+}
+
+header{
+    text-align:left;
+}
+
+container h2{
+    text-align:left;
+    padding:10px 0px 20px 20px;
+    letter-spacing:25px;
+    font-family:monospace;
+    border-bottom:1px solid white;
+    margin-bottom:0px;
+}
+
+ul{
+    margin:0px;
+}
+
+.list{
+    text-align:left;
+    list-style-type:none;
+    letter-spacing:15px;
+    line-height:33px;
+    font-family:monospace;
+    border-bottom:1px solid white;
+    padding-top:75px;
+    padding-bottom:25px;
+}
+
+.list:last-child{
+    border-bottom:none;
+}
+
+.title{
+    padding-left:15px;
+}
+
+.space{
+    padding-left:102px;
+}
+
+.space_price{
+    padding-left:50px;
+}
+
+.detail_button{
+    display: block;
+  margin: 0 0 0 auto;
+}
+
+.no_purchase{
+    padding-top:145px;
+}
+

@@ -1,0 +1,28 @@
+.home{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:25px;
+}
+
+.header_link{
+    display:flex;
+    letter-spacing:1.45em;
+    padding-bottom:50px;
+}
+
+
+.link{
+    display:block;
+    padding-left:25px;
+    text-decoration:none;
+    color:white;
+    font-family:monospace;
+    border-right:1px solid white;
+}
+
+.link:last-child{
+    border-right:none;
+}
+
+
+

@@ -1,0 +1,35 @@
+.home{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:25px;
+}
+
+.header_link{
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+    display:flex;
+    letter-spacing:24px;
+    padding-bottom:50px;
+}
+
+.text{
+    margin-right:50px;
+}
+
+.text:first-child{
+    margin-left:50px;
+}
+
+.link{
+    display:block;
+    margin-left:50px;
+    text-decoration:none;
+    color:white;
+    font-family:monospace;
+    border-right:1px solid white;
+}
+
+.link:last-child{
+    border-right:none;
+}

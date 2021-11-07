@@ -1,0 +1,45 @@
+body {
+    background-color:black;
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.message{
+    color:white;
+}
+
+.center{
+    text-align:center;
+    
+}
+
+container h2{
+    padding:10px 0px 20px 20px;
+    color:white;
+    letter-spacing:25px;
+    font-family:monospace;
+    border-bottom:1px solid white;
+    margin-bottom:60px;
+}
+
+container p{
+    color:white;
+}
+
+.center p{
+    letter-spacing:20px;
+}
+
+.text{
+    margin-top:30px;
+}
+
+.button{
+    margin-top:30px;
+}
+
+.signup{
+    margin-top:30px;
+}
+

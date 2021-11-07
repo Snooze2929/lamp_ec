@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+    margin:0px;
+}
+
+container{
+    color:white;
+    width:960px;
+    margin-right:auto;
+    margin-left:auto;
+    font-size:40px;
+    font-family:monospace;
+}
+
+.center{
+    margin-right:auto;
+    margin-left:auto;
+    width:960px;
+}
+
+.cd_name{
+    letter-spacing:1.4em;
+    margin-top:0px;
+}
+
+.text{
+    letter-spacing:20px;
+}
+
+.jacket_space{
+    text-align:center;
+}
+
+.jacket{
+    height:500px;
+}

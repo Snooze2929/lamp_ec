@@ -1,0 +1,50 @@
+body {
+    background-color:black;
+    margin:0px;
+}
+
+.center{
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+}
+
+container h2{
+    padding:10px 0px 20px 20px;
+    margin-bottom:50px;
+    color:white;
+    letter-spacing:25px;
+    font-family:monospace;
+    border-bottom:1px solid white;
+}
+
+container form p{
+    margin:0 auto;
+}
+
+.flex{
+    display:flex;
+    padding-bottom:50px;
+}
+
+container p {
+    color:white;
+    letter-spacing:25px;
+    font-family:monospace;
+}
+
+.textarea{
+    width:578px;
+    height:410px;
+    vertical-align:top;
+}
+
+.message{
+    margin-left:78px;
+    display:flex;
+}
+
+.submit{
+    text-align:right;
+    padding-right:78px;
+}

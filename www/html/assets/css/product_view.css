@@ -1,0 +1,41 @@
+body {
+    color:white;
+    background-color:black;
+    margin:0px;
+}
+
+.center{
+    margin-right:auto;
+    margin-left:auto;
+    width:1000px;
+}
+
+container h2{
+    padding:10px 0px 20px 20px;
+    letter-spacing:25px;
+    font-family:monospace;
+    border-bottom:1px solid white;
+    margin-bottom:50px;
+}
+
+.product_image{
+    height:300px;
+    width:300px;
+}
+
+.product_list{
+    display:flex;
+    height:250px;
+    margin-bottom:80px;
+}
+
+.flex{
+    flex:1;
+    margin-left:100px;
+    letter-spacing:14px;
+    line-height:165%;
+}
+
+.button{
+    padding:0px 0px 50px 100px;
+}
