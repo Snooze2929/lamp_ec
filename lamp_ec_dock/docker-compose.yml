@@ -17,6 +17,17 @@ services:
   mysql:
     image: mysql:5.7 # mysql5.7のイメージをそのまま利用。
     # mysqlの起動時に文字コードを指定
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci --innodb-use-native-aio=0
+    volumes:
+      - ./db:/var/lib/mysql # ホストOSのdbフォルダ内にmysqlコンテナのDBの内容を保存
+    environment:
+      - MYSQL_ROOT_PASSWORD=root # mysqlのルートパスワードを設定
+      - MYSQL_DATABASE=farofficial # デフォルトで作成するデータベース名を設定
+      - MYSQL_USER=faradmin # デフォルトで作成するDBユーザー名を設定
+      - MYSQL_PASSWORD=far1230 # デフォルトで作成するDBユーザーのパスワードを設定
+      - "TZ=Asia/Tokyo" # タイムゾーンを設定
+    image: mysql:5.7 # mysql5.7のイメージをそのまま利用。
+    # mysqlの起動時に文字コードを指定
     command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
     volumes:
       - ./db:/var/lib/mysql # ホストOSのdbフォルダ内にmysqlコンテナのDBの内容を保存
@@ -26,6 +37,7 @@ services:
       - MYSQL_USER=faradmin # デフォルトで作成するDBユーザー名を設定
       - MYSQL_PASSWORD=far1230 # デフォルトで作成するDBユーザーのパスワードを設定
       - "TZ=Asia/Tokyo" # タイムゾーンを設定
+
   # 3. phpmyadminをインストールするコンテナ
   phpmyadmin:
     image: phpmyadmin/phpmyadmin # phpmyadminのコンテナイメージをそのまま利用
