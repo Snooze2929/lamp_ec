@@ -45,11 +45,11 @@ if($sort === ''){
     
 }
 
-
+//指定の並び替え順に商品を取得
 $rows = get_sort_open_products($db,$sort);
 
 //トークンの作成
-
+$token = get_token();
 
 require_once VIEW_PATH . 'product_view.php';
 

@@ -17,8 +17,8 @@
             <select name="sort">
                 <option value= ''>select</option>
                 <option value="new" <?php if($sort === 'new'){print h_special('selected');}?>>new</option>
-                <option value="cheep" <?php if($sort === 'row'){print h_special('selected');}?>>cheep</option>
-                <option value="expensive" <?php if($sort === 'high'){print h_special('selected');}?>>expensive</option>
+                <option value="cheep" <?php if($sort === 'cheep'){print h_special('selected');}?>>cheep</option>
+                <option value="expensive" <?php if($sort === 'expensive'){print h_special('selected');}?>>expensive</option>
             </select>
             <input type="submit" value="change">
         </form>
