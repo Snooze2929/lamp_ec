@@ -36,11 +36,20 @@ $user_id = get_session('user_id');
 //ログインしているユーザー情報の取得
 $login_user = get_user($db,$user_id);
 
-//公開中の商品情報の取得
-$rows = get_open_product($db);
+//商品の並び替え指定
+$sort = get_get('sort');
+
+if($sort === ''){
+
+    $sort = 'new';
+    
+}
+
+
+$rows = get_sort_open_products($db,$sort);
 
 //トークンの作成
-$token = get_token();
+
 
 require_once VIEW_PATH . 'product_view.php';
 

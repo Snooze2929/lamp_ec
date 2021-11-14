@@ -13,6 +13,15 @@
         <?php include VIEW_PATH . 'temps/login_after_header.php';?>
     <container>
         <h2>store.</h2>
+        <form method="get" class="sort">
+            <select name="sort">
+                <option value= ''>select</option>
+                <option value="new" <?php if($sort === 'new'){print h_special('selected');}?>>new</option>
+                <option value="cheep" <?php if($sort === 'row'){print h_special('selected');}?>>cheep</option>
+                <option value="expensive" <?php if($sort === 'high'){print h_special('selected');}?>>expensive</option>
+            </select>
+            <input type="submit" value="change">
+        </form>
             <?php foreach($rows as $row){?>
             <div class="product_list">
                 <img class="product_image" src="<?php print h_special(IMAGE_PATH.$row['img_file_name']);?>">

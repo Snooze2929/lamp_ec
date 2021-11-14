@@ -166,6 +166,20 @@ function get_post($name){
     
 }
 
+//getの値受け取り
+function get_get($name){
+    
+    //値のセット確認
+    if(isset($_GET[$name]) === true){
+
+        return $_GET[$name];
+
+    }
+
+    //値がセットされていない場合
+    return '';
+}
+
 //filesの取得
 function get_files($name){
     

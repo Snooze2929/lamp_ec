@@ -57,6 +57,54 @@ function get_products($db,$is_open = false){
     return fetch_all_query($db,$sql);
 }
 
+//商品の並び替え
+function get_sort_products($db,$sort,$is_open = false){
+
+    //sql作成
+    $sql = 'SELECT product_id,
+                   product_name,
+                   price,
+                   img_file_name,
+                   status,
+                   genre,
+                   stock
+            FROM   ec_product_master
+            ';
+    
+    //$is_openがtrueの場合公開状態の商品のみ取得
+    if($is_open = true){
+
+        $sql .= 'WHERE status = 1
+        ';
+
+    }
+
+    //商品の並び替え
+    if($sort === 'expensive'){
+
+        $sql .= 'ORDER BY price DESC';
+
+    }else if($sort === 'cheep'){
+
+        $sql .= 'ORDER BY price';
+
+    }else{
+
+        $sql .= 'ORDER BY create_datetime DESC';
+
+    }
+
+    return fetch_all_query($db,$sql);
+
+}
+
+//公開状態の商品を並び替え
+function get_sort_open_products($db,$sort){
+
+    return get_sort_products($db,$sort,true);
+
+}
+
 //指定した商品イメージの取得(detail用)
 function get_product($db,$product_id){
     
